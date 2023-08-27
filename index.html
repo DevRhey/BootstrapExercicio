@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: white;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: rgb(174, 197, 218);
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Agencia de viagens</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item "><a class="nav-link active" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#promocoes">Promoçoes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container container-lg container-md container-sm">
+            <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100 h-50 d-inline-block"
+                            src="https://cdn.pixabay.com/photo/2023/08/02/14/21/cloud-8165401_1280.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h2>Destino 1</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-50 d-inline-block"
+                            src="https://cdn.pixabay.com/photo/2023/07/18/16/25/rowing-8135184_1280.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h2>Destino 2</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-50 d-inline-block"
+                            src="https://cdn.pixabay.com/photo/2023/08/06/20/53/alps-8173743_1280.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h2>Destino 3</h2>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev"
+                    type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-next"
+                    type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"
+                        type="button"></button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide-to="1" type="button"></button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide-to="2" type="button"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        Destino 1
+                    </div>
+                    <div class="card-body">
+                        todo resto
+                        <img class="d-block w-100 h-50 d-inline-block"
+                            src="https://cdn.pixabay.com/photo/2023/08/02/14/21/cloud-8165401_1280.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        Destino 2
+                    </div>
+                    <div class="card-body">
+                        todo resto
+                        <img class="d-block w-100 h-50 d-inline-block"
+                            src="https://cdn.pixabay.com/photo/2023/07/18/16/25/rowing-8135184_1280.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        Destino 3
+                    </div>
+                    <div class="card-body">
+                        todo resto
+                        <img class="d-block w-100 h-50 d-inline-block"
+                            src="https://cdn.pixabay.com/photo/2023/08/06/20/53/alps-8173743_1280.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/js_bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
